@@ -1,0 +1,21 @@
+<div class="jumbotron" ng-controller="seeddetailsCtrl">
+	<h4>Seed Details :</h4>
+	<table class="table">
+  
+    <tbody>
+      <tr>
+        <td><b>Type of Seed</td>
+        <td><b>Quantity Available</td>
+        <td><b>Quantity Requested</td>
+        <td></td>
+      </tr>
+
+      <tr ng-repeat="x in SeedDetails">
+        <td>{{x.typeOfSeed}}</td>
+        <td>{{x.quantityAvailable}}</td>
+        <td>{{x.quantityRequired}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>

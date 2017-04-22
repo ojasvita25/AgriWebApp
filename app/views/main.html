@@ -1,0 +1,39 @@
+<div class="jumbotron"  ng-controller="MainCtrl">
+<form>
+ Name:
+	<input type="text" ng-model="name">
+	<br><br>
+	Passw:
+	<input type="text" ng-model="pass">
+	<br><br>
+	<input type="submit" value="Submit" ng-click="submit()">
+</form>
+ <!-- <ul>
+
+      <li ng-repeat="entry in farmer_details">
+        {{ entry | json}} <br />
+        {{ entry['name'] }} <br />
+        {{ entry['details'] }} <br />
+        {{ entry['phno'] }} <br />
+        {{ entry['url'] }} <br />
+       
+      </li>
+    </ul> -->
+<table>
+	<!-- <thead>
+		<tr>
+			<th> {{1+2}} Name</th>
+			<th>Details</th>
+			<th>Ph no.</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="farmer_data" ng-repeat="farmer_detail in farmer_details">
+			<td><p>{{farmer_detail.gsx$name.$t}}</p></td>
+			<td><p>{{farmer_detail.gsx$details.$t}}</p></td>
+			<td><p>{{farmer_detail.gsx$phno.$t}}</p></td>
+		</tr>
+	</tbody> -->
+</table>
+</div>
+

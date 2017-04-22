@@ -1,0 +1,17 @@
+<div class="jumbotron" ng-controller="FertilizerdetailsCtrl">
+<h4>Fertilizer Details - {{fertName}} </h4>
+<table class="table">
+    <tbody>
+      <tr>
+        <td><b>Farmer Id</td>
+        <td><b>Farmer Name</td>
+        <td><b>Amount {{amountType}}</td>
+      </tr> 
+     <tr ng-repeat="x in FertmoreDetails">
+        <td>{{x.farmerid}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.quantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

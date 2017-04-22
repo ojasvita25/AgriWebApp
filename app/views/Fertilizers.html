@@ -1,0 +1,46 @@
+<div class="jumbotron"  ng-controller="FertilizersCtrl">
+
+	<h4>Fertilizers  </h4>
+
+<!-- 	<button class="btn-sm btn-primary" data-toggle="collapse" data-target="#demo">Organic</button> -->
+	<!-- <button class="btn-sm btn-primary" data-toggle="collapse" data-target="#demo2">Non-Organic</button> -->
+<!-- 	<table id="demo2" class="collapse" class="table">
+    <tbody>
+      <tr>
+        <td><b>non-organic Fertilizers</td>
+        <td><b>Amount Available</td>
+         <td><b>Amount Requested</td>
+        <td><b>Details</td>
+      </tr>
+   
+      <tr>
+        <td>abc</td>
+        <td>6</td>
+        <td><button type="button" class="btn-sm btn-primary"><a style="text-decoration:none; color:black;" ng-href="#/fertilizerdetails"><b>Details</a></button></td>
+      </tr>
+     
+    </tbody>
+  </table> -->
+  <!-- <table id="demo" class="collapse" class="table"> -->
+  <button ng-click="showfertilizers()">Refresh data </button><br><br>
+<table class="table">
+    <tbody>
+      <tr>
+
+        <td><b> organic Fertilizers</td>
+        <td><b>Amount Available</td>
+        <td><b>Details</td>
+        <td><b>Amount Requested</td>
+        <td><b>Details</td>
+      </tr>
+      <tr ng-repeat="x in FertDetails">
+        <td>{{x.sfertilizer||x.dfertilizer}}</td>
+        <td>{{x.supply}}</td>
+         <td><button type="button" class="btn-sm btn-primary"><a style="text-decoration:none; color:black;"  ng-click="showdetails1(x.sfertilizer||x.dfertilizer)"  ng-href="#/fertilizerdetails"><b>Details</a></button></td>
+        <td>{{x.demand}}</td>
+         <td><button type="button" class="btn-sm btn-primary" ng-click="showdetails2(x.sfertilizer||x.dfertilizer)" ><a style="text-decoration:none; color:black;" ng-href="#/fertilizerdetails"><b>Details</a></button></td>
+      </tr>
+    </tbody>
+    </table>
+  <!-- </table> -->
+</div>
